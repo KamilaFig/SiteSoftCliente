@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
+    </style>
+
+    <title>SoftClient - Cliente</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estiloCliente.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+      <nav class="navbar fixed-top bg-light justify-content-between">
+        <div class="container-fluid">
+          <h2 class="navbar-brand">SoftClient</h2>
+          <div id="topo-menu">
+              <label>Bem vindo, Nome do Cliente</label>
+              <button type="button" id="btn-senha" class="btn" data-toggle="modal" data-target="#trocar_senha">Trocar Senha</button>
+            <a href="index.html" class="btn" type="button" id="btn-sair">Sair</a>
+          </div>
+        </div>
+        <!--Inicio Modal Trocar Senha-->
+        <div class="modal fade" id="trocar_senha" tabindex="-1" role="dialog" aria-labelledby="trocar_senha" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title col-md-7" id="trocar_senha">Trocar Senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!--Inicio do form do modal Trocar Senha-->
+                <form>
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Senha Atual:</label>
+                      <div class="col-sm-5">
+                        <input class="col-sm-5" type="text">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Nova Senha:</label>
+                      <div class="col-sm-5">
+                        <input class="col-sm-5" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-sm-4 col-form-label">Repetir Nova Senha:</label>
+                      <div class="col-sm-5">
+                        <input class="col-sm-5" type="text">
+                      </div>
+                    </div>
+                  </form>
+                  <!--Fim do form do modal Trocar Senha-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>      
+        <!--Fim Modal Trocar Senha-->
+      </nav>
+
+      <section id="home">
+        <div class="container-fluid">
+          <div class="row">
+              <!-- Botão Modal Abrir Chamado -->
+              <div class="col">
+                <button type="button" id="btn-chamado" class="btn" data-toggle="modal" data-target="#abrir_chamado">
+                    Solicitar Atendimento
+                </button>
+              </div>
+          </div>
+              
+            <!-- Modal Abrir Chamado-->
+            <div class="modal fade" id="abrir_chamado" tabindex="-1" role="dialog" aria-labelledby="abrir_chamado" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title col-md-7" id="abrir_chamado">Solicitar Atendimento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!--Inicio do form do modal de atendimento-->
+                    <form>
+                        <div class="form-group row">
+                          <label class="col-sm-4 col-form-label">Código do Atendimento:</label>
+                          <div class="col-sm-2">
+                            <label type="text" readonly class="form-control">1111</label>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Aplicação:</label>
+                            <select class="col-sm-3">
+                              <option selected>Vendas</option>
+                              <option>Promotor</option>
+                              <option>Site</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4">Motivo:</label>
+                            <select class="col-sm-5">
+                              <option selected>Aplicativo não funciona</option>
+                              <option>Vendedor não consegue passar pedido</option>
+                              <option>Não visualizo as visitas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Descrição do Problema:</label>
+                          <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-sm-2">Contato:</label>
+                          <input class="col-sm-3" type="text">
+                          <label class="col-sm-2">Telefone:</label>
+                          <input class="col-sm-3" type="tel">
+                        </div>
+                      </form>
+                      <!--Fim do form do modal de atendimento-->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Confirmar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8">
+                <h3>Lista de Chamados:</h3>
+              </div>
+              <div class="col-md-4">
+                <h3>Gráfico de Atendimento:</h3>
+              </div>
+            </div>
+              
+          <!--Tabela de atendimentos tela inicial-->
+          <div class="col-md-7">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Código</th>
+                    <th scope="col">Solução</th>
+                    <th scope="col">Motivo</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td scope="row"><button class="btn" type="button">Visualizar</button></td>              
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td scope="row"><button class="btn" type="button">Visualizar</button></td>  
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td scope="row"><button class="btn" type="button">Visualizar</button></td>  
+                  </tr>
+                </tbody>
+              </table>
+          </div> 
+          
+          <div class="col-md-4">
+            
+          </div>
+        <!--Fim da tabela de atendimentos tela inicial-->
+      </section>
+
+
+      <!-- Rodapé -->
+      <footer id="rodape">
+        <div class="container">
+          
+        </div>
+      </footer>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+  </html>

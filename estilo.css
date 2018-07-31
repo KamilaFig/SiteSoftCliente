@@ -1,0 +1,200 @@
+/*
+
+@autor Kamila Fig
+@version 0.1
+
+*/
+/* ================================ layout ================================*/
+
+/* -- Body -- */
+
+
+body {
+	background: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: -1%;
+}
+
+
+/*Lado Cliente*/
+#cliente {
+	background-color: #EE4000;
+}
+
+#cliente h3 {
+	color:#FFFFFF;
+	text-align: center;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+
+#cliente label {
+	font-size: 22px;
+	margin-top: 1%;
+	padding-left: 12%;
+}
+
+#cliente form {
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#cliente .form-control {
+	background-color: #EE4000;
+	border: 3px solid #FFFFFF;
+	border-radius: 10px;
+	margin: 2%;
+}
+
+#cliente input {
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+#cliente .btn-custom {
+	color: #FFFFFF;
+	border: 3px solid #FFFFFF;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	font-size: 22px;
+	transition: background 0.4s, color 0.4s;
+	margin: 5%;
+	margin-left: 25%;
+	margin-bottom: 19%;
+}
+
+#cliente .btn:hover {
+	background-color: #FFFFFF;
+	color: #EE4000;	
+}
+
+#cliente li {
+	margin-top: -10%;
+	padding-left: 22%;
+	margin-bottom: 16%;
+	list-style-type: none;
+}
+
+#cliente li a {
+	color: #FFFFFF;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+/* Fim Lado Cliente*/
+
+/*Lado Funcionário*/
+
+#funcionario h3 {
+	color:#EE4000;
+	text-align: center;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+
+#funcionario label {
+	font-size: 22px;
+	margin-top: 1%;
+	padding-left: 10%;
+}
+
+#funcionario form {
+	text-transform: uppercase;
+	color: #EE4000;
+}
+
+
+#funcionario .form-control {
+	background-color: #FFFFFF;
+	border: 3px solid #EE4000;
+	border-radius: 10px;
+	margin: 2%;
+}
+
+#funcionario input {
+	color: #EE4000;
+	font-size: 20px;
+}
+
+#funcionario .btn-custom {
+	color: #EE4000;
+	border: 3px solid #EE4000;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	font-size: 22px;
+	transition: background 0.4s, color 0.4s;
+	margin: 5%;
+	margin-left: 25%;
+	margin-bottom: 19%;
+}
+
+#funcionario .btn:hover {
+	background-color: #EE4000;
+	color: #FFFFFF;	
+}
+
+#funcionario li {
+	margin-top: -10%;
+	padding-left: 22%;
+	list-style-type: none;
+}
+
+#funcionario li a {
+	color: #EE4000;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+
+/*Fim Lado Funcionário*/
+
+/* -- Barra de Navegação -- */
+
+
+
+
+/* -- Rodape -- */
+
+
+/* ================================ Tipografia ================================*/
+
+#ladoA h1 {
+	background-color: #EE4000;
+	color: #FFFFFF;
+	font-weight: 200px;
+	font-size: 70px;
+	text-align: right;
+	margin-top: 0px;
+	margin-right: -30px;
+	margin-bottom: 0px;
+	padding-top: 10%;
+	padding-bottom: 3%;
+}
+
+#ladoB h1 {
+	background-color: #FFFFFF;
+	color: #EE4000;
+	font-weight: 200px;
+	font-size: 70px;
+	margin-top: 0px;
+	margin-left: -30px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+
+
+
