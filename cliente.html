@@ -172,28 +172,59 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td scope="row"><button class="btn" type="button">Visualizar</button></td>              
+                    <td scope="row"><button type="button" id="btn-chamado" class="btn" data-toggle="modal" data-target="#visualizar_atendimento">Visualizar</button></td>              
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td scope="row"><button class="btn" type="button">Visualizar</button></td>  
+                    <td scope="row"><button type="button" id="btn-chamado" class="btn" data-toggle="modal" data-target="#visualizar_atendimento">Visualizar</button></td>  
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td scope="row"><button class="btn" type="button">Visualizar</button></td>  
+                    <td scope="row"><button type="button" id="btn-chamado" class="btn" data-toggle="modal" data-target="#visualizar_atendimento">Visualizar</button></</td>  
                   </tr>
                 </tbody>
               </table>
           </div> 
+          <!--Inicio Modal Visualizar Atendimento-->
+          <div class="modal fade" id="visualizar_atendimento" tabindex="-1" role="dialog" aria-labelledby="visualizar_atendimento" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title col-md-7" id="visualizar_atendimento">Atendimento</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--Inicio do form-->
+                  <form>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            ***Carregar aqui o que foi preenchido na solicitação de atendimento pelo cliente***
+                        </div>
+                    </div>
+
+                  </form>
+                    <!--Fim do form-->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                  <button type="button" class="btn btn-warning">Cancelar Solicitação</button>
+                  <button type="button" class="btn btn-primary">Editar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!--Final Modal de Visualizar Atendimento-->
           
           <div class="col-md-4">
-            
+            Colocar o Gráfico aqui!!!! Como? E eu lá sei!
           </div>
         <!--Fim da tabela de atendimentos tela inicial-->
       </section>
