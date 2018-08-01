@@ -1,0 +1,97 @@
+body {
+    background: #FFFFFF;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar {
+    background-color: #EE4000;    
+}
+
+.navbar h2 {
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 0px;
+    margin-bottom: -5px;
+    padding-left: 2%;
+}
+
+h3 {
+    float: left;
+    color: #EE4000;
+    margin: 2%;
+    margin-left: 2%;
+    font-size: 28px;
+}
+
+#topo-menu {
+    text-align: right;
+    padding: 1%;
+    color: #FFFFFF;
+}
+
+#topo-menu label {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+#trocar_senha h5 {
+    color: #EE4000;
+    font-size: 25px;
+    padding-left: 0px;
+}
+
+#btn-senha {
+    color: #FFFFFF;
+    background-color: #EE4000;
+    border: 1px solid #FFFFFF;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#btn-senha:hover {
+    background-color: #FFFFFF;
+    color: #CC0000;
+}
+
+#btn-sair {
+    border: 1px solid #FFFFFF;
+    background-color:#FFFFFF;
+    color: #EE4000;
+    width: 80px;
+}
+
+#btn-sair:hover {
+    background-color:#CC0000;
+    color: #FFFFFF;
+}
+
+
+table {
+    margin-top: 5%;
+    font-size: 20px;
+    color: #EE4000;
+}
+
+table .btn {
+    background-color: #EE4000;
+    color: #FFFFFF;
+    float: right;
+}
+
+table .btn:hover {
+    background-color: #FFFFFF;
+    color: #EE4000;
+    border: 1px solid #EE4000;
+}
+
+#abrir_atendimento h5 {
+    color: #EE4000;
+    font-size: 25px;
+    padding-left: 0px;
+}
+
+form {
+    color: #EE4000;
+    padding: 0px;
+    margin: 0px;
+} 
